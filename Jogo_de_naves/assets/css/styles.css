@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #603a03;
+}
+
+body {
+    background-image: url(../imgs/fundo.jpg);
+}
+
+#container {
+    width: 950px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fundoGame {
+    width: 950px;
+    height: 630px;
+    background-image: url(../imgs/fundo_game.jpg);
+    border-color: black;
+    border-style:solid;
+    background-size: cover;
+}
+
+#inicio {
+    width: 350px;
+    height: 200px;
+    border-radius: 45px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+
+}
+#jogador {
+	width:256px;
+	height:66px;
+	position:absolute;
+	left:8px;
+	top:179px;
+background-image:url(../imgs/apache.png);
+}
+#inimigo1 {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 689px;
+	top: 253px;
+	background-image:url(../imgs/inimigo1.png);
+}
+#inimigo2 {
+    width: 165px;
+    height: 70px;
+    position: absolute;
+    left:775px;
+    top: 447px;
+}
+#amigo {
+    width: 44px;
+    height: 51px;
+    position: absolute;
+    left:10px;
+    top: 464px;
+}
+.animacao1 {
+    background-image: url(../imgs/apache.png);
+    animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    /*-webkit-animation: play .s steps(12) infinite;*/
+}
+@keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+@-webkit-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+}
+ 
+@-moz-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+}
+ 
+@-ms-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+}
+ 
+@-o-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+}
+.animacao2 {
+    background-image: url(../imgs/inimigo1.png);
+    animation: play .5s steps(2) infinite;
+}
+
+.animacao3 {
+	background-image:url(../imgs/amigo.png);
+	animation:play2 .9s steps(12) infinite;
+	-webkit-animation: play2 .9s steps(12) infinite;
+    -moz-animation: play2 .9s steps(12) infinite;
+    -ms-animation: play2 .9s steps(12) infinite;
+    -o-animation: play2 .9s steps(12) infinite;
+}
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-528px;}
+}
+@-moz-keyframes play2 {
+    from { background-position:    0px; }
+      to { background-position: -528px; }
+}
+@-webkit-keyframes play2 {
+    from { background-position:    0px; }
+      to { background-position: -528px; }
+}
+@-ms-keyframes play2 {
+    from { background-position:    0px; }
+      to { background-position: -528px; }
+}
+@-o-keyframes play2 {
+    from { background-position:    0px; }
+      to { background-position: -528px; }
+}
+
+.animacao4 {
+	width:44px;
+	height:51px;
+	background-image:url(../imgs/amigo_explosao.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+@-moz-keyframes play3 {
+    from { background-position:    0px; }
+      to { background-position: -308px; }
+}
+.animacao5 {
+    background-image: url(../imgs/inimigo2.png);
+    animation: play4 .1s steps(3) infinite;
+    -webkit-animation: play4 .8s steps(3) infinite;
+    -moz-animation: play4 .8s steps(3) infinite;
+    -ms-animation: play4 .8s steps(3) infinite;
+    -o-animation: play4 .8s steps(3) infinite;
+}
+@keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 0px;
+    }
+}
+
+@-webkit-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 0px;
+    }
+}
+
+@-moz-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 0px;
+    }
+}
+
+@-ms-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 0px;
+    }
+}
+
+@-o-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 0px;
+    }
+}
+
+#disparo {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #603a03;
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    	margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+}
