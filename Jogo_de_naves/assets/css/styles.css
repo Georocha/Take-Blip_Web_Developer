@@ -266,3 +266,17 @@ h3 {
 	text-align:center;
 	padding:10px;
 }
+
+.btnReset{
+    border-radius: 5px;
+    background-color: rgb(147,97,30);
+    width: 200px;
+    color:rgb(230,230,230);
+    
+}
+
+.btnReset:hover{
+    background-color:rgb(230,230,230);
+    color:rgb(147,97,30);
+    
+}
